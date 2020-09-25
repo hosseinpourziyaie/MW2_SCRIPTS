@@ -16,7 +16,7 @@ please consider giving credits to author if you planning to use this script
 more readme will be added later ...
 
 
-![code](https://raw.githubusercontent.com/hosseinpourziyaie/MW2_SCRIPTS/MapCalloutsHUD/master/showoff_1.jpg)
+![code](https://raw.githubusercontent.com/hosseinpourziyaie/MW2_SCRIPTS/master/MapCalloutsHUD/showoff_1.jpg)
 
 
-![code](https://raw.githubusercontent.com/hosseinpourziyaie/MW2_SCRIPTS/MapCalloutsHUD/master/showoff_2.jpg)
+![code](https://raw.githubusercontent.com/hosseinpourziyaie/MW2_SCRIPTS/master/MapCalloutsHUD/showoff_2.jpg)
