@@ -7,8 +7,8 @@ USING: copy script anywhere in fs_game raw folder/iwd package and call ::init() 
  in clients like ultramod those have scriptAutoInitialize system you can install this script
   simply by copying it in "\ultramod\scripts" folder to install it easily
 
-Note: so far in this version i have only recorded callout data for maps mp_crash and mp_rust
-     you can record locations using developer tool i havev included in this repository
+Note: so far in this version i have only recorded callout data for maps mp_crash and mp_rust.
+     you can record locations using developer tool i have included in this repository
    
    
 please consider giving credits to author if you planning to use this script
