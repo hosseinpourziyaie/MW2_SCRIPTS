@@ -2,8 +2,9 @@
 
 
 
-USING: copy script anywhere in server scripts raw folder and call ::init() func
- in clients like ultramod have scriptAutoInitialize system you can install this script
+USING: copy script anywhere in fs_game raw folder/iwd package and call ::init() func
+
+ in clients like ultramod those have scriptAutoInitialize system you can install this script
   simply by copying it in "\ultramod\scripts" folder to install it easily
 
 Note: so far in this version i have only recorded callout data for maps mp_crash and mp_rust
