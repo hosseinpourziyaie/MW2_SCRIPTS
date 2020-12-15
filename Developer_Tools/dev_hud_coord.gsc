@@ -16,8 +16,6 @@
 **             best thing could do is just extending alive time by reducing refresh_rate
 **
 **
-** [Copyright © ULTRAMOD/Hosseinpourziyaie 2019] <hosseinpourziyaie@gmail.com>
-**
 ************************************************************************************/
 
 init()
