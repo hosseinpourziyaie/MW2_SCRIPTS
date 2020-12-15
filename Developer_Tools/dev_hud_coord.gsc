@@ -1,5 +1,5 @@
 /************************************************************************************
-                       ULTRAMOD MODERN WARFARE 2 Project                       *****
+                              IW4 SERVER SCRIPTS                               *****
 ***********************************************************************************
 **
 ** - Name        : Developer Tools for MW2
@@ -11,7 +11,6 @@
 ** [WARNING] consider giving credits to author if you planning to use this script
 **                                                                  
 **                                                  
-** [NOTE] for more contents visit our website: http://ultramod.eu/
 **
 ** [Copyright © ULTRAMOD/Hosseinpourziyaie 2019] <hosseinpourziyaie@gmail.com>
 **
