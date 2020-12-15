@@ -11,6 +11,10 @@
 ** [WARNING] consider giving credits to author if you planning to use this script
 **                                                                  
 **                                                  
+** [NOTE] This Scripts work only for 2min after player joins then it will Kick player
+**          due to overflow of configstring list caused by filling up hud with new coords
+**             best thing could do is just extending alive time by reducing refresh_rate
+**
 **
 ** [Copyright © ULTRAMOD/Hosseinpourziyaie 2019] <hosseinpourziyaie@gmail.com>
 **
