@@ -43,10 +43,12 @@ calloutDisplayHUD()
 	//self iPrintLn( "[DEBUG]::calloutDisplayHUD called");
 	self endon( "disconnect" );
 	self.callouthud = newClientHudElem(self);
-	self.callouthud.x = 107;
-	self.callouthud.y = 3; 
-	self.callouthud.alignx = "left";
+	self.callouthud.x = 0;
+	self.callouthud.y = 0;
+	self.callouthud.alignX = "left";
+	self.callouthud.alignY = "top";
 	self.callouthud.horzAlign = "left";
+	self.callouthud.vertAlign = "top";
 	self.callouthud.fontscale = 1.2;
 	self.callouthud setText("");
 	self.callouthud.hidewheninmenu = true;
