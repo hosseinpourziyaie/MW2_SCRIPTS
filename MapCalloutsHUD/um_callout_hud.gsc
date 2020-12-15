@@ -1,5 +1,5 @@
 /************************************************************************************
-                       ULTRAMOD MODERN WARFARE 2 Project                       *****
+                              IW4 SERVER SCRIPTS                               *****
 ***********************************************************************************
 **
 ** - Name        : Callout HUD Script for MW2
@@ -14,7 +14,6 @@
 **
 ** [NOTE] MapEdits for mp_rust , mp_crash were recorded by Hosseinpourziyaie
 **
-** [NOTE] for more contents visit our website: http://ultramod.eu/
 **
 ** [Copyright © ULTRAMOD/Hosseinpourziyaie 2019] <hosseinpourziyaie@gmail.com>
 **
