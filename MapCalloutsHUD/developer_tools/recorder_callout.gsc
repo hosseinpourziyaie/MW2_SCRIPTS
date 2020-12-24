@@ -1,14 +1,3 @@
-/*»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   ULTRAMOD MW2 : IW4 as its best!                               »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   Custom Raw Script : recorder_callout.gsc                      »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   Author: Hosseinpourziyaie                                     »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   Extra Info: this scripts for developer makes map marking      »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»     and saving it way easier. however trimming exported records »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»     because of gamelog system restrictions are still a pain!    »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   For More Information Visit www.ultramod.eu                    »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»   Copyright 2020 ULTRAMODIFICATION. All rights reserved.        »»»»»»»»»»»»»»»
-»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»*/
-
 init()
 {
 	/***************************RUN Record Script******************************************************************/
@@ -24,6 +13,20 @@ Record() {
 
 Recorder() {
 	self endon("disconnect");
+	self.hinthud = newClientHudElem(self);
+	self.hinthud.x = -64;
+	self.hinthud.y = -44;
+	self.hinthud.alignX = "right";
+	self.hinthud.alignY = "bottom";
+	self.hinthud.horzAlign = "right";
+	self.hinthud.vertAlign = "bottom";
+	self.hinthud.fontscale = 1.2;
+	self.hinthud setText("save center -> [^3[{+activate}]^7]\nsave radius -> [^3[{+melee}]^7]");
+	self.hinthud.hidewheninmenu = false;
+	self.hinthud.alpha = 1;
+	self.hinthud.glowAlpha = 0.6;
+	self.hinthud.glowColor = (0.3, 0.3, 0.3);
+	
 	wtf = "!";
 
 	last_origin = self.origin;
