@@ -10,7 +10,7 @@
 **
 ** 
 **                                                                  
-** [NOTE] This script's camera flights linear(no rotation of angles one single travel)
+** [NOTE] This script's camera flights linear(no rotation of angles on single flys)
 **
 ** [NOTE] Travel scripts for mp_rust, mp_crash ,map_highrise ,mp_vacant 
 **                                              were recorded by Hosseinpourziyaie
