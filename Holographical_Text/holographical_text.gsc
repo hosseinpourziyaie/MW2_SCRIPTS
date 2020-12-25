@@ -41,7 +41,7 @@ dmcLogic() {
 
 dmcLoadConfig() {
 
-	level.stringHolo		= "HOSSEINPOURZIYAIE";
+	level.stringHolo		= "YOUR TEXT HERE";
 }
 
 dmcDrawHolographicText() {
