@@ -22,7 +22,7 @@ cmd_register()
 	initializeDvars();
 	addCommand( "playsound",   ::playsound_f );
 	addCommand( "notifymsg",   ::notifymsg_f );
-    addCommand( "g_balance",   ::balance_f );
+	addCommand( "g_balance",   ::balance_f );
 	addCommand( "finishmatch", ::endmatch_f );
 	addCommand( "freespec",    ::freespec_f );
 }
