@@ -20,8 +20,11 @@ init()
 cmd_register()
 {
 	initializeDvars();
-	addCommand( "playsound", ::playsound_f );
-	addCommand( "notifymsg", ::notifymsg_f );
+	addCommand( "playsound",   ::playsound_f );
+	addCommand( "notifymsg",   ::notifymsg_f );
+    addCommand( "g_balance",   ::balance_f );
+	addCommand( "finishmatch", ::endmatch_f );
+	addCommand( "freespec",    ::freespec_f );
 }
 
 cmd_thread()
@@ -58,8 +61,11 @@ addCommand( dVarName, functionCall ) {
 
 initializeDvars()
 {
-	setDvar( "playsound", "" );
-	setDvar( "notifymsg", "" );
+	setDvar( "playsound",  "" );
+	setDvar( "notifymsg",  "" );
+	setDvar( "g_balance",  "" );
+	setDvar( "finishgame", "" );
+	setDvar( "freespec", "" );
 }
 
 /***********************************Functions**********************************************************************/
@@ -104,4 +110,45 @@ drawNotifyMessageforEveryone( msg )
 	level.notifymsg_txt setText( msg );
 	level.notifymsg_txt setPulseFx(50,int(((10*.85)*1000)),500);
 }
+
+balance_f()
+{
+	//if(maps\mp\gametypes\_teams::getTeamBalance())
+	//	iPrintLn("Theres no need to balance the teams");
+	//else if(isDefined(self.pers["called_balance"]))
+	//    iPrintLn("You can only call teambalance once a map");
+	//else {
+	//	self.pers["called_balance"] = 1;
+	//	level maps\mp\gametypes\_teams::balanceTeams();
+	//}
 	
+	iPrintLnBold( "Teams are being balanced" );
+	maps\mp\gametypes\_teams::balanceTeams();
+}
+
+endmatch_f()
+{
+	//level thread maps\mp\gametypes\_gamelogic::forceEnd();
+	
+	// End the current map
+	level.forcedEnd = true;
+	thread maps\mp\gametypes\_gamelogic::endGame( "tie", game["strings"]["round_draw"] );
+}
+
+freespec_f()
+{
+	// dVarValue contains the player's number
+	dVarValue = int( dVarValue );
+	
+	// Search for the player
+	player = findPlayerByNumber( dVarValue );
+	if ( !isDefined( player ) || isAlive( player ) )
+		return;
+	
+	player iprintlnbold( "^0[ ^3ADMIN ^0] ^7Free Spectator mode permission granted!" );
+
+	player allowSpectateTeam( "allies", true );
+	player allowSpectateTeam( "axis", true );
+	player allowSpectateTeam( "freelook", true );
+	player allowSpectateTeam( "none", true );
+}
