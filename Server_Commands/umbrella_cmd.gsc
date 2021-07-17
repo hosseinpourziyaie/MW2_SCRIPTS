@@ -97,7 +97,7 @@ drawNotifyMessageforEveryone( msg )
 	level.notifymsg_txt.alpha = 1;
 	level.notifymsg_txt.color = ( 1, 1, 1 );
 	level.notifymsg_txt.glowColor = (0.2, 0.3, 0.7);
-    level.notifymsg_txt.glowAlpha = 1;
+	level.notifymsg_txt.glowAlpha = 1;
 	level.notifymsg_txt.fontScale = 1.1;
 	level.notifymsg_txt.font = "hudbig";
 	level.notifymsg_txt.hidewheninmenu = false;
