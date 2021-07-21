@@ -135,7 +135,7 @@ endmatch_f()
 	thread maps\mp\gametypes\_gamelogic::endGame( "tie", game["strings"]["round_draw"] );
 }
 
-freespec_f()
+freespec_f( dVarValue )
 {
 	// dVarValue contains the player's number
 	dVarValue = int( dVarValue );
